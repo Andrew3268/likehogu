@@ -1,0 +1,325 @@
+<section class="hero is-success is-fullheight">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <%= image_tag "logo.png" %>
+            <!--<img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">-->
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="/" class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item">
+              Examples
+            </a>
+            <a class="navbar-item">
+              Documentation
+            </a>
+            <span class="navbar-item">
+              <a class="button is-success is-inverted">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        작성방법 가이드 라인
+      </h1>
+      <h2 class="subtitle">
+        Subtitle
+      </h2>
+    </div>
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="is-active"><a href="/home/form">글쓰기</a></li>
+          <li><a href="/home/cityjob">City Jobs</a></li>
+          <li><a href="/home/factory">Factory</a></li>
+          <li><a href="/home/farm">Farm</a></li>
+          <li><a href="#">기타</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section></br></br></b>
+
+<div class="container">
+  <div class="form-warpper">
+    
+    <div class="column is-half left">
+      
+      <div class="field">
+        <label class="label">상호명(청소 같이 이름이 없는 곳은 청소한 곳 이름)</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="ex.식당이름,농장이름,공장이름">
+        </div>
+      </div>
+      
+      <label class="label">State</label>
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select name="country">
+              <option value="QLD">QLD</option>
+              <option value="NSW">NSW</option>
+              <option value="NT">NT</option>
+              <option value="SA">SA</option>
+              <option value="WA">WA</option>
+              <option value="VIC">VIC</option>
+              <option value="TSA">TSA</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-success">Choose</button>
+        </div>
+      </div>
+      
+      
+      
+      <div class="field">
+        <label class="label">City</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="일했던 도시">
+        </div>
+      </div>
+      
+      <label class="label">직종</label>
+      <div class="field has-addons">
+        <div class="control is-expanded">
+          <div class="select is-fullwidth">
+            <select name="country">
+              <option value="City Job">City Job</option>
+              <option value="Farm">Farm</option>
+              <option value="Factory">Factory</option>
+              <option value="기타">기타</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <button type="submit" class="button is-success">Choose</button>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">세부 직종(식당(한/일/중/양식),상점,호텔,청소,세차,배달,massage등등)//(공장 종류(ex 고기,사료 등등)//농장 종류(ex:딸기, 토마토, 라즈베리 등등) </label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">포지션 및 근무형태(Full,Part,Casual)</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="포지션 / 근무형태">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">언제 일했어?</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">받았던 시급//(농장의 경우 평균 주(week) 수익</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">평균 근무시간</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">영어 사용 빈도(상/중/하)</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">근무 난이도(상/중/하)</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+      </div>
+      
+   </div><!--column is-half left-->
+  
+ </div><!-- form-warpper -->
+
+</div><!-- container -->
+
+
+
+
+<div class="container">
+  <div class="form-warpper">
+    
+    <div class="column is-half right">
+
+      <div class="field">
+        <label class="label">근무 분위기</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">주로 어떤일 했어?</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">장/단점</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">하고 싶은말</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+      
+      <label class="label">추천/비추천</label></label>
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>추천</option>
+            <option>비추천</option>
+          </select>
+        </div>
+      </div></br>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-success">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-success">Cancel</button>
+      </div>
+      <div class="control">
+        <button class="toggle-modal button is-success">미리보기</button>
+      </div>
+    </div>
+
+  
+  
+    <div class="modal" id="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Modal title</p>
+          <button class="delete toggle-modal"></button>
+        </header>
+        <section class="modal-card-body">
+  <!-- Content ... -->          
+          <div class="block">
+            <span class="tag is-success">
+              상호명 (지역)
+            </span>
+          </div>
+          
+          <div class="notification is-danger">
+            <ul>
+              <li>직종</li>
+              <li>포지션</li>
+              <li>일한 기간(얼마나 일했어?)</li>
+              <li>시급</li>
+              <li>영어 사용빈도 (상/중/하)</li>
+              <li>난이도 (상/중/하)</li>
+            </ul>
+          </div>
+          
+          <article class="message is-info">
+            <div class="message-header">
+              업무내용
+            </div>
+            <div class="message-body">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus rerum beatae, mollitia id voluptatum veniam dolore rem fugiat laudantium.
+            </div>
+            
+            <div class="message-header">
+              근무 분위기 및 근무 환경
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, repudiandae.
+            </div>
+            
+            <div class="message-header">
+              장/단점 
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo optio cumque totam debitis impedit rerum nobis vero enim magni ad ex ipsum doloremque animi eaque numquam dolorem doloribus ipsam perspiciatis blanditiis dolor dolore nesciunt, ducimus molestias maiores! Nobis, nam doloremque provident, modi reiciendis quia dolores odio ipsam alias quisquam eius?
+            </div>
+            
+            <div class="message-header">
+              기타 하고싶은말
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
+            </div>
+          </article>
+  <!-- Content ... -->      
+        </section>
+        <footer class="modal-card-foot">
+          <a class="button is-success toggle-modal">제출하기</a></a>
+          <a class="button toggle-modal">수정하기</a>
+        </footer>
+      </div>
+    </div>
+
+   </div><!--column is-half right-->
+  
+ </div><!-- form-warpper -->
+
+</div><!-- container -->
+
+
+
+<script>
+  var modal = document.getElementById('modal');
+    var elements = document.getElementsByClassName('toggle-modal');
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].addEventListener('click', toggleClass);
+    }
+  
+    function toggleClass() {
+      modal.classList.toggle('is-active');
+    }
+</script>
