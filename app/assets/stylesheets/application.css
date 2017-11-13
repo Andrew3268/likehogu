@@ -32,13 +32,6 @@
 }
 
 
-/*.container .input .left {*/
-/*    float: left;*/
-/*}*/
-
-/*.container .input .right {*/
-/*    float: right;*/
-/*}*/
 
 .container .search-bar input {
     height: 5em;
@@ -120,3 +113,18 @@
 /*  background-color: HSLA(345, 100%, 60%, 1.00);*/
 /*}*/
 
+
+/***************** City Job section *****/
+
+.subtitle_02 {
+  		overflow: hidden; 
+	    text-overflow: ellipsis; 
+	    display: -webkit-box;
+	    -moz-line-clamp: 3; 
+	    -webkit-line-clamp: 3; /* number of line */	
+	    -ms-line-clamp: 3;
+	    -moz-box-orient: vertical;
+	    -webkit-box-orient: vertical;
+	    -ms-box-orient: vertical;
+	    word-wrap:break-word;
+}
