@@ -38,19 +38,31 @@
       </div>
     </header>
   </div>
-
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
     <div class="container has-text-centered">
-      <h1 class="title">
-        작성방법 가이드 라인
+      <h1 class="title gline">
+        <h1>작성법 가이드라인</h1>
+        <ul>
+          <il>1.상호명은 정확히 입력해 주세요.</il>
+          <p>- 농장 같은경우 농장이름을 입력해주세요. (농장이름을 모를때는 어떻게??)</p>
+          <p>- 청소잡 같은경우 청소하는 곳의 상호명을 입력해주세요.</p>
+          <li>2. 주(state)와 도시(city)를 꼭 입력해주세요.</li>
+          <li>3. </li>
+          <li>4. 세부 직종</li>
+          <p>- City Job -- 식당(한식, 일식, 중식등), 상점(상점 종류), 호텔, 청소, 배달, 마사지, 등</p>
+          <p>- Farm Job -- 딸기, 라즈베리, 토마토, 등등</p>
+          <p>- Factory Job -- 소고기, 닭고기, 돼지고기, 사료, 샐러드 등등</p>
+          <li>5.일한 기간은 대략 몇일 몇주 몇달 일했는지 적어주세요[ ex (2month) ] - Optional</li>
+          <li>6.받았던 시급 또는 농장의경우 평균 주급은 공개하지 않아도 됩니다 - Optional</li>
+          <li>7.</li>
+        </ul>
       </h1>
       <h2 class="subtitle">
         Subtitle
       </h2>
     </div>
   </div>
-
   <!-- Hero footer: will stick at the bottom -->
   <div class="hero-foot">
     <nav class="tabs is-boxed is-fullwidth">
@@ -66,21 +78,18 @@
       </div>
     </nav>
   </div>
-</section></br></br></b>
-
+</section>
+</br></br></b>
 <div class="container">
   <div class="form-warpper">
-    
     <div class="column is-half left">
-      
       <div class="field">
-        <label class="label">상호명(청소 같이 이름이 없는 곳은 청소한 곳 이름)</label>
+        <label class="label">*상호명(청소 같이 이름이 없는 곳은 청소한 곳 이름)</label>
         <div class="control">
           <input class="input" type="text" placeholder="ex.식당이름,농장이름,공장이름">
         </div>
       </div>
-      
-      <label class="label">State</label>
+      <label class="label">*State</label>
       <div class="field has-addons">
         <div class="control is-expanded">
           <div class="select is-fullwidth">
@@ -99,17 +108,13 @@
           <button type="submit" class="button is-success">Choose</button>
         </div>
       </div>
-      
-      
-      
       <div class="field">
-        <label class="label">City</label>
+        <label class="label">*City ( 자동 완성기능, gem 있음)</label>
         <div class="control">
           <input class="input" type="text" placeholder="일했던 도시">
         </div>
       </div>
-      
-      <label class="label">직종</label>
+      <label class="label">*Job Type</label>
       <div class="field has-addons">
         <div class="control is-expanded">
           <div class="select is-fullwidth">
@@ -125,98 +130,125 @@
           <button type="submit" class="button is-success">Choose</button>
         </div>
       </div>
-      
       <div class="field">
-        <label class="label">세부 직종(식당(한/일/중/양식),상점,호텔,청소,세차,배달,massage등등)//(공장 종류(ex 고기,사료 등등)//농장 종류(ex:딸기, 토마토, 라즈베리 등등) </label>
+        <label class="label">*세부 직종(식당(한/일/중/양식),상점,호텔,청소,세차,배달,massage등등)//(공장 종류(ex 고기,사료 등등)//농장 종류(ex:딸기, 토마토, 라즈베리 등등) </label>
         <div class="control">
           <input class="input" type="text" placeholder="Text input">
         </div>
       </div>
-      
       <div class="field">
-        <label class="label">포지션 및 근무형태(Full,Part,Casual)</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="포지션 / 근무형태">
+        <label class="label">*근무형태</label>
+        <div class="select">
+          <select>
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Casual</option>
+          </select>
         </div>
       </div>
-      
       <div class="field">
-        <label class="label">일한 기간(얼마나 일했는지)</label>
+        <label class="label">*포지션</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="포지션">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">근무기간</label>
+        <div class="select">
+          <select>
+            <option>1 month</option>
+            <option>2 month</option>
+            <option>3 month</option>
+            <option>4 month</option>
+            <option>5 month</option>
+            <option>6 month</option>
+            <option>7 month</option>
+            <option>8 month</option>
+            <option>9 month</option>
+            <option>10 month</option>
+            <option>11 month</option>
+            <option>12 month</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">*받았던 시급//농장의 경우 평균 주(week) 수익</label>
         <div class="control">
           <input class="input" type="text" placeholder="Text input">
         </div>
       </div>
-      
       <div class="field">
-        <label class="label">받았던 시급//(농장의 경우 평균 주(week) 수익</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
+        <label class="label">평균 근무시간(per/week)</label>
+        <div class="select">
+          <select>
+            <option>0-5</option>
+            <option>5-10</option>
+            <option>10-20</option>
+            <option>20-30</option>
+            <option>30-40</option>
+            <option>40-50</option>
+          </select>
         </div>
       </div>
-      
       <div class="field">
-        <label class="label">평균 근무시간</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
+        <label class="label">영어사용빈도</label>
+        <div class="select">
+          <select>
+            <option>상</option>
+            <option>중</option>
+            <option>하</option>
+          </select>
         </div>
       </div>
-      
       <div class="field">
-        <label class="label">영어 사용 빈도(상/중/하)</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
+        <label class="label">근무난이도</label>
+        <div class="select">
+          <select>
+            <option>상</option>
+            <option>중</option>
+            <option>하</option>
+          </select>
         </div>
       </div>
-      
-      <div class="field">
-        <label class="label">근무 난이도(상/중/하)</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
-      </div>
-      
-   </div><!--column is-half left-->
-  
- </div><!-- form-warpper -->
-
-</div><!-- container -->
-
-
-
-
-<div class="container">
-  <div class="form-warpper">
-    
-    <div class="column is-half right">
-
-      <div class="field">
-        <label class="label">근무 분위기</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
+      <!--column is-half left-->
+    </div>
+    <!-- form-warpper -->
+  </div>
+  <!-- container -->
+  <div class="container">
+    <div class="form-warpper">
+      <div class="column is-half right">
+        <div class="field">
+          <label class="label">*근무 분위기및 근무 환경</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
         </div>
-      </div>
-      
-      <div class="field">
-        <label class="label">주로 어떤일 했어?</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+        <div class="field">
+          <label class="label">*주로 어떤일 했어?</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
         </div>
-      </div>
-      
-      <div class="field">
-        <label class="label">장/단점</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+        <div class="field">
+          <label class="label">*장/단점</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
         </div>
-      </div>
-      
-      <div class="field">
-        <label class="label">하고 싶은말</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+        <div class="field">
+          <label class="label">부당한 경험</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
         </div>
-      </div>
-      
-      <label class="label">추천/비추천</label></label>
+        <div class="field">
+          <label class="label">하고 싶은말</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        <label class="label">추천/비추천</label></label>
       <div class="control">
         <div class="select">
           <select>
@@ -224,8 +256,8 @@
             <option>비추천</option>
           </select>
         </div>
-      </div></br>
-
+      </div>
+    </br>
     <div class="field is-grouped">
       <div class="control">
         <button class="button is-success">Submit</button>
@@ -237,9 +269,7 @@
         <button class="toggle-modal button is-success">미리보기</button>
       </div>
     </div>
-
-  
-  
+    <!-- modal section -->
     <div class="modal" id="modal">
       <div class="modal-background"></div>
       <div class="modal-card">
@@ -248,13 +278,12 @@
           <button class="delete toggle-modal"></button>
         </header>
         <section class="modal-card-body">
-  <!-- Content ... -->          
+          <!-- Content ... -->
           <div class="block">
             <span class="tag is-success">
               상호명 (지역)
             </span>
           </div>
-          
           <div class="notification is-danger">
             <ul>
               <li>직종</li>
@@ -265,29 +294,31 @@
               <li>난이도 (상/중/하)</li>
             </ul>
           </div>
-          
           <article class="message is-info">
             <div class="message-header">
               업무내용
             </div>
             <div class="message-body">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus rerum beatae, mollitia id voluptatum veniam dolore rem fugiat laudantium.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus rerum beatae, mollitia id voluptatum veniam dolore rem fugiat laudantium.
             </div>
-            
             <div class="message-header">
               근무 분위기 및 근무 환경
             </div>
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, repudiandae.
             </div>
-            
             <div class="message-header">
               장/단점 
             </div>
             <div class="message-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo optio cumque totam debitis impedit rerum nobis vero enim magni ad ex ipsum doloremque animi eaque numquam dolorem doloribus ipsam perspiciatis blanditiis dolor dolore nesciunt, ducimus molestias maiores! Nobis, nam doloremque provident, modi reiciendis quia dolores odio ipsam alias quisquam eius?
             </div>
-            
+            <div class="message-header">
+              부당한 경험
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
+            </div>
             <div class="message-header">
               기타 하고싶은말
             </div>
@@ -295,23 +326,20 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
             </div>
           </article>
-  <!-- Content ... -->      
+          <!-- Content ... -->
         </section>
         <footer class="modal-card-foot">
           <a class="button is-success toggle-modal">제출하기</a></a>
-          <a class="button toggle-modal">수정하기</a>
-        </footer>
-      </div>
+        <a class="button toggle-modal">수정하기</a>
+      </footer>
     </div>
-
-   </div><!--column is-half right-->
-  
- </div><!-- form-warpper -->
-
-</div><!-- container -->
-
-
-
+  </div>
+</div>
+<!--column is-half right-->
+</div>
+<!-- form-warpper -->
+</div>
+<!-- container -->
 <script>
   var modal = document.getElementById('modal');
     var elements = document.getElementsByClassName('toggle-modal');
