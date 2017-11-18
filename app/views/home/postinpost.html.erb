@@ -1,67 +1,124 @@
 <section class="hero is-success ">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        상호명
-      </h1>
-      <h2 class="subtitle">
-        State / City
-      </h2>
-    </div>
-  </div>
-  <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
+  <div class="hero-head">
+    <header class="navbar">
       <div class="container">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/home/form">글쓰기</a></li>
-          <li class="is-active"><a href="/home/cityjob">City Jobs(글 더보기)</a></li>
-          <li><a href="/home/factory">Factory</a></li>
-          <li><a href="/home/farm">Farm</a></li>
-          <li><a>Layout</a></li>
-        </ul>
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <%= image_tag "logo.png" %>
+            <!--<img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">-->
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="/" class="navbar-item is-active">Home</a>
+            <a class="navbar-item">로그인</a>
+            <a class="navbar-item">로그아웃</a>
+            <a class="navbar-item">회원가입</a>
+            <!-- <span class="navbar-item">
+              <a class="button is-success is-inverted">
+                <span class="icon">
+                  <i class="fa fa-github"></i>
+                </span>
+                <span>Download</span>
+              </a>
+            </span> -->
+          </div>
+        </div>
       </div>
-    </nav>
+    </header>
   </div>
+</div>
+<div class="hero-foot">
+  <nav class="tabs is-boxed is-fullwidth">
+    <div class="container">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/home/form">글쓰기</a></li>
+        <li class="is-active"><a href="/home/cityjob">City Jobs(글 더보기)</a></li>
+        <li><a href="/home/factory">Factory</a></li>
+        <li><a href="/home/farm">Farm</a></li>
+        <li><a>Layout</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
 </section>
 </br>
 <div class="container">
   <div class="post-warpper">
     <div class="column is-half left">
-      <div class="notification is-danger">
-        <ul>
-          <li>직종(part/full/casual)</li>
-          <li>포지션</li>
-          <li>일한 기간(얼마나 일했어?)</li>
-          <li>시급</li>
-          <li>영어 사용빈도 (상/중/하)</li>
-          <li>난이도 (상/중/하)</li>
-        </ul>
+      <div class="card">
+        <div class="card-content">
+          <p class="title workplace">일했던 곳 이름</p>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>State</span>
+          </p>
+          <p class="card-footer-item">
+            <span>City</span>
+          </p>
+        </footer>
       </div>
-      <article class="message is-info">
+      <article class="message">
+        <div class="message-body">
+          <ul>
+            <li>직종(part/full/casual)</li>
+            <li>세부직종</li>
+            <li>근무형태</li>
+            <li>포지션</li>
+            <li>근무기간</li>
+            <li>급여방식</li>
+            <li>시급</li>
+            <li>평균근무시간</li>
+            <li>영어 사용빈도 (상/중/하)</li>
+            <li>난이도 (상/중/하)</li>
+          </ul>
+        </div>
+      </article>
+      <article class="message">
         <div class="message-header">
-          업무내용(주로 했던일)
+          업무내용 & 노하우
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus rerum beatae, mollitia id voluptatum veniam dolore rem fugiat laudantium.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
         </div>
+      </article>
+      <article class="message is-link">
         <div class="message-header">
-          근무 분위기 및 근무 환경
+          근무 분위기 & 근무 환경
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, repudiandae.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
         </div>
+      </article>
+      <article class="message is-danger">
         <div class="message-header">
-          장/단점 
+          부당한 경험
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo optio cumque totam debitis impedit rerum nobis vero enim magni ad ex ipsum doloremque animi eaque numquam dolorem doloribus ipsam perspiciatis blanditiis dolor dolore nesciunt, ducimus molestias maiores! Nobis, nam doloremque provident, modi reiciendis quia dolores odio ipsam alias quisquam eius?
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
         </div>
+      </article>
+      <article class="message is-success">
+        <div class="message-header">
+          장점 & 단점 
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        </div>
+      </article>
+      <article class="message is-warning">
         <div class="message-header">
           기타 하고싶은말
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
         </div>
       </article>
     </div>
