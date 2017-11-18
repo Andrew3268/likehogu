@@ -31,6 +31,18 @@
     float: right;
 }
 
+.form-warpper .right .right-guide {
+  border: 0.3em solid #ffdd57;
+  border-radius: 0.7em;
+  padding: 1em;
+}
+
+
+.form-warpper .right .tip {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
 
 
 .container .search-bar input {
@@ -41,6 +53,11 @@
     padding: 2.4em;
 }
 
+.container .form-warpper .review-guidelines {
+  border: 1px solid #23d160;
+  border-radius: 1em;
+  padding: 1em;
+}
 
 
 
@@ -113,6 +130,7 @@
 /*  background-color: HSLA(345, 100%, 60%, 1.00);*/
 /*}*/
 
+/****************** End SearchBar Section **********/
 
 /***************** City Job section *****/
 
@@ -131,6 +149,81 @@
 
 /***************** End City Job Section **************/
 
-.gline {
-  text-align: left;
+/************** Form Section **************/
+
+.h4-checkbox {
+  border: 1px solid #23d160;
+  border-radius: 0.5em;
+  padding: 1em;
 }
+
+.span-guideline {
+  color: black;
+  font-weight: bold;
+  border: 1px solid #ffdd57;
+  border-radius: 0.2em;
+  background-color: #ffdd57;
+  padding: 0 0.5em;
+}
+
+.form-warpper .right .icon-tip {
+  margin-left: 0.8em;
+  margin-bottom: 0.1em;
+  font-size: 2em;
+}
+
+.important {
+  color: red;
+  font-size: 1.3em;
+}
+
+.right-guide-1 {
+  margin-top: -1.2em;
+  margin-bottom: 1em;
+}
+
+
+.review-tip-icon {
+  position: relative;
+  display: inline;
+}
+
+.review-tip-icon .review-tip-text {
+    visibility: hidden;
+    width: 23em;
+    background-color: #23d160;
+    margin-left: 10em;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 8px;
+
+    /* Position the review-tip-icon */
+    position: absolute;
+    z-index: 1;
+}
+
+.review-tip-icon:hover .review-tip-text {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

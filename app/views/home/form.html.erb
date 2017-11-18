@@ -40,27 +40,40 @@
   </div>
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title gline">
-        <h1>작성법 가이드라인</h1>
-        <ul>
-          <il>1.상호명은 정확히 입력해 주세요.</il>
-          <p>- 농장 같은경우 농장이름을 입력해주세요. (농장이름을 모를때는 어떻게??)</p>
-          <p>- 청소잡 같은경우 청소하는 곳의 상호명을 입력해주세요.</p>
-          <li>2. 주(state)와 도시(city)를 꼭 입력해주세요.</li>
-          <li>3. </li>
-          <li>4. 세부 직종</li>
-          <p>- City Job -- 식당(한식, 일식, 중식등), 상점(상점 종류), 호텔, 청소, 배달, 마사지, 등</p>
-          <p>- Farm Job -- 딸기, 라즈베리, 토마토, 등등</p>
-          <p>- Factory Job -- 소고기, 닭고기, 돼지고기, 사료, 샐러드 등등</p>
-          <li>5.일한 기간은 대략 몇일 몇주 몇달 일했는지 적어주세요[ ex (2month) ] - Optional</li>
-          <li>6.받았던 시급 또는 농장의경우 평균 주급은 공개하지 않아도 됩니다 - Optional</li>
-          <li>7.</li>
-        </ul>
-      </h1>
-      <h2 class="subtitle">
-        Subtitle
-      </h2>
+    <div class="container has-text-left">
+      <div class="form-warpper">
+        <div class="column is-half left">
+          <ul>
+            <li>1.LikeHogu에 리뷰를 작성하실 때는 <a href="#">회원가입</a>이 필요합니다.</li>
+            <li>2.LikeHogu에 리뷰를 작성하실 때는, LikeHogu에서 별도로 정한 <span class="span-guideline">가이드라인</span>을 준수하셔야 합니다. 반드시 리뷰 작성전에 읽어보세요.
+            </li>
+            <li>3.LikeHogu에 작성된 리뷰를 무단전재•무단이용하는 것은 금지합니다. 단 해당 리뷰를 작성한 본인은 제외합니다.</li>
+            <li>4.LikeHogu는 게재된 리뷰의 내용에 관하여 어떠한 보증도 하지 않습니다. 이용자의 판단하에 이용해 주십시오. 또한 게재된 리뷰에 의해 생긴 이용자의 손해(이용자가 작성한 각종 컨텐츠에 의한 컴퓨터 바이러스 감염피해 등도 포함합니다)나 이용자끼리의 트러블 등에 대하여 LikeHogu는 일절 보상 및 관여를 하지 않습니다.
+            </li>
+            <li>5.LikeHogu는 본 사이트에 링크된 제3자가 운영하는 사이트에 관하여 어떠한 보증도 하지 않습니다. 이용자의 판단하에 이용해 주십시오. 또 링크처에서 생긴 손해나 이용자끼리의 트러블 등에 대하여 Likehogu는 일절 보상 및 관여를 하지 않습니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-warpper">
+        <div class="column is-half right">
+          <div class="icon-tip">
+            <h1 class="icon has-text-warning"><i class="fa fa-warning">Tip</i></h1>
+          </div>
+          <div class="right-guide">
+            <h3 class="title is-4">1.리뷰에 포함 가능한 내용</h3>
+            <div class="right-guide-1">
+              <p>-직접 경험을 토대로한 진실된 내용</p>
+            </div>
+            <h3 class="title is-4">2.리뷰에 포함 불 가능한 내용</h3>
+            <div class="right-guide-1">
+              <p>-욕설 및 비속어</p>
+              <p>-타인을 비하하는 내용</p>
+              <p>-본인이 직접 경험하지 않은 내용</p>
+            </div>
+            <h3>*리뷰의 내용에 관한 상세 정보는 리뷰 <span class="span-guideline">가이드라인</span>을 참고하세요.</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Hero footer: will stick at the bottom -->
@@ -70,6 +83,7 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li class="is-active"><a href="/home/form">글쓰기</a></li>
+          3
           <li><a href="/home/cityjob">City Jobs</a></li>
           <li><a href="/home/factory">Factory</a></li>
           <li><a href="/home/farm">Farm</a></li>
@@ -84,262 +98,299 @@
   <div class="form-warpper">
     <div class="column is-half left">
       <div class="field">
-        <label class="label">*상호명(청소 같이 이름이 없는 곳은 청소한 곳 이름)</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="ex.식당이름,농장이름,공장이름">
+        <label class="label"><span class="important">*</span>상호명
+          <div class="icon has-text-info review-tip-icon"><i class="fa fa-info-circle"></i>
+            <span class="review-tip-text">일 했던 곳의 업체명을 입력해 주세요.</br>(청소의 경우 청소한 곳 또는 청소업체 이름)</span>
         </div>
-      </div>
-      <label class="label">*State</label>
-      <div class="field has-addons">
-        <div class="control is-expanded">
-          <div class="select is-fullwidth">
-            <select name="country">
-              <option value="QLD">QLD</option>
-              <option value="NSW">NSW</option>
-              <option value="NT">NT</option>
-              <option value="SA">SA</option>
-              <option value="WA">WA</option>
-              <option value="VIC">VIC</option>
-              <option value="TSA">TSA</option>
-            </select>
-          </div>
-        </div>
-        <div class="control">
-          <button type="submit" class="button is-success">Choose</button>
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">*City ( 자동 완성기능, gem 있음)</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="일했던 도시">
-        </div>
-      </div>
-      <label class="label">*Job Type</label>
-      <div class="field has-addons">
-        <div class="control is-expanded">
-          <div class="select is-fullwidth">
-            <select name="country">
-              <option value="City Job">City Job</option>
-              <option value="Farm">Farm</option>
-              <option value="Factory">Factory</option>
-              <option value="기타">기타</option>
-            </select>
-          </div>
-        </div>
-        <div class="control">
-          <button type="submit" class="button is-success">Choose</button>
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">*세부 직종(식당(한/일/중/양식),상점,호텔,청소,세차,배달,massage등등)//(공장 종류(ex 고기,사료 등등)//농장 종류(ex:딸기, 토마토, 라즈베리 등등) </label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">*근무형태</label>
-        <div class="select">
-          <select>
-            <option>Full Time</option>
-            <option>Part Time</option>
-            <option>Casual</option>
-          </select>
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">*포지션</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="포지션">
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">근무기간</label>
-        <div class="select">
-          <select>
-            <option>1 month</option>
-            <option>2 month</option>
-            <option>3 month</option>
-            <option>4 month</option>
-            <option>5 month</option>
-            <option>6 month</option>
-            <option>7 month</option>
-            <option>8 month</option>
-            <option>9 month</option>
-            <option>10 month</option>
-            <option>11 month</option>
-            <option>12 month</option>
-          </select>
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">*받았던 시급//농장의 경우 평균 주(week) 수익</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">평균 근무시간(per/week)</label>
-        <div class="select">
-          <select>
-            <option>0-5</option>
-            <option>5-10</option>
-            <option>10-20</option>
-            <option>20-30</option>
-            <option>30-40</option>
-            <option>40-50</option>
-          </select>
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">영어사용빈도</label>
-        <div class="select">
-          <select>
-            <option>상</option>
-            <option>중</option>
-            <option>하</option>
-          </select>
-        </div>
-      </div>
-      <div class="field">
-        <label class="label">근무난이도</label>
-        <div class="select">
-          <select>
-            <option>상</option>
-            <option>중</option>
-            <option>하</option>
-          </select>
-        </div>
-      </div>
-      <!--column is-half left-->
-    </div>
-    <!-- form-warpper -->
-  </div>
-  <!-- container -->
-  <div class="container">
-    <div class="form-warpper">
-      <div class="column is-half right">
-        <div class="field">
-          <label class="label">*근무 분위기및 근무 환경</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">*주로 어떤일 했어?</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">*장/단점</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">부당한 경험</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-        <div class="field">
-          <label class="label">하고 싶은말</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-        <label class="label">추천/비추천</label></label>
+      </label>
       <div class="control">
-        <div class="select">
-          <select>
-            <option>추천</option>
-            <option>비추천</option>
+        <input class="input" type="text" placeholder="ex.식당이름,농장이름,공장이름">
+      </div>
+    </div>
+    <label class="label"><span class="important">*</span>State</label>
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <div class="select is-fullwidth">
+          <select name="country">
+            <option value="QLD">QLD</option>
+            <option value="NSW">NSW</option>
+            <option value="NT">NT</option>
+            <option value="SA">SA</option>
+            <option value="WA">WA</option>
+            <option value="VIC">VIC</option>
+            <option value="TSA">TSA</option>
           </select>
         </div>
       </div>
+      <div class="control">
+        <button type="submit" class="button is-success">Choose</button>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label"><span class="important">*</span>City ( 자동 완성기능, gem 있음)</label>
+      <div class="control">
+        <input class="input" type="text" placeholder="일했던 도시">
+      </div>
+    </div>
+    <label class="label"><span class="important">*</span>Job Type</label>
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <div class="select is-fullwidth">
+          <select name="country">
+            <option value="City Job">City Job</option>
+            <option value="Farm">Farm</option>
+            <option value="Factory">Factory</option>
+            <option value="기타">기타</option>
+          </select>
+        </div>
+      </div>
+      <div class="control">
+        <button type="submit" class="button is-success">Choose</button>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label"><span class="important">*</span>세부직종
+        <div class="icon has-text-info review-tip-icon"><i class="fa fa-info-circle"></i>
+          <span class="review-tip-text">식당의 경우 :한식,일식,중식,등을 입력
+          </br>상점,호텔,청소,세차,배달,massage 등을 입력  
+        </br>공장의 경유: 고기,사료,샐러드 등을 입력
+      </br>농장의 경우 :딸기, 토마토, 라즈베리 등을 입력
+    </span>
+  </div>
+</label>
+<div class="control">
+  <input class="input" type="text" placeholder="Text input">
+</div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>근무형태</label>
+  <div class="select">
+    <select>
+      <option>Full Time</option>
+      <option>Part Time</option>
+      <option>Casual</option>
+    </select>
+  </div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>포지션</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="포지션">
+  </div>
+</div>
+<div class="field">
+  <label class="label">근무기간</label>
+  <div class="select">
+    <select>
+      <option>1 month</option>
+      <option>2 month</option>
+      <option>3 month</option>
+      <option>4 month</option>
+      <option>5 month</option>
+      <option>6 month</option>
+      <option>7 month</option>
+      <option>8 month</option>
+      <option>9 month</option>
+      <option>10 month</option>
+      <option>11 month</option>
+      <option>12 month</option>
+      <option>Over 1 Year</option>
+    </select>
+  </div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>받았던 시급//농장의 경우 평균 주(week) 수익</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Text input">
+  </div>
+</div>
+<div class="field">
+  <label class="label">평균 근무시간(Hour/week)</label>
+  <div class="select">
+    <select>
+      <option>0-5</option>
+      <option>5-10</option>
+      <option>10-20</option>
+      <option>20-30</option>
+      <option>30-40</option>
+      <option>40-50</option>
+      <option>Over 50</option>
+    </select>
+  </div>
+</div>
+<div class="field">
+  <label class="label">영어사용빈도</label>
+  <div class="select">
+    <select>
+      <option>상</option>
+      <option>중</option>
+      <option>하</option>
+    </select>
+  </div>
+</div>
+<div class="field">
+  <label class="label">근무난이도</label>
+  <div class="select">
+    <select>
+      <option>상</option>
+      <option>중</option>
+      <option>하</option>
+    </select>
+  </div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>근무 분위기 & 근무 환경</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>주로 했던일 & 노하우</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>장 & 단점</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+<div class="field">
+  <label class="label"><span class="important">*</span>부당한 경험
+    <div class="icon has-text-info review-tip-icon"><i class="fa fa-info-circle"></i>
+      <span class="review-tip-text">부당한 경험(호주 근로법에 위반되는 경우 또는 그외 부당하다고 생각되는 경험)이있을 경우에만 입력해주세요.</span>
+    </div>
+  </label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+<div class="field">
+  <label class="label">하고 싶은말</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Textarea"></textarea>
+  </div>
+</div>
+<label class="label">추천 & 비추천</label></label>
+<div class="control">
+  <div class="select">
+    <select>
+      <option>추천</option>
+      <option>비추천</option>
+    </select>
+  </div>
+</div>
+</br>
+<label class="checkbox">
+  <input type="checkbox">
+  이 리뷰는 저의 경험을 바탕으로 작성한 이 근무지에 대한 진실된 의견입니다. 저는 이 시설과 개인적 혹은 업무적으로 관련이 없으며, 이 리뷰를 작성하는 조건으로 해당 시설 또는 제3자로부터 어떠한 금전적 또는 물질적인 대가를 제공받지 않았습니다. 저는 LikeHogu가 조작된 리뷰에 대하여 단호하게 대처하는 방침을 견지하고 있음을 알고 있습니다.
+  <h4 class="h4-checkbox">LikeHogu는 리뷰 작성자가 리뷰의 대상 업체와 관련이 없다는 사실을 명확히 하고자 합니다. 이 박스를 체크하여, 해당 업체 또는 경쟁업체의 관계자가 아니며 해당 업체와 개인적/사업적으로 관련이 없음을 확인해 주시기 바랍니다. 본 이용 약관의 위반과 비윤리적 관행 이외에 리뷰에 대한 부정행위를 저지르는 것은 대부분의 관할 지역에서 법률 및 규정으로 금지됩니다.[[(UCP 2005/29/EC) 및 (FTC 16CFR Part 255) 참조]]. 자세한 내용은 컨텐츠 무결성 정책을 참조하십시오.
+  </h4>
+</label></br></br>
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-success">Submit</button>
+  </div>
+  <div class="control">
+    <button class="button is-success">Cancel</button>
+  </div>
+  <div class="control">
+    <button class="toggle-modal button is-success">미리보기</button>
+  </div>
+</div>
+<!-- modal section -->
+<div class="modal" id="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete toggle-modal"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+      <div class="block">
+        <span class="tag is-success">
+          상호명 (지역)
+        </span>
+      </div>
+      <div class="notification is-danger">
+        <ul>
+          <li>직종</li>
+          <li>포지션</li>
+          <li>일한 기간(얼마나 일했어?)</li>
+          <li>시급</li>
+          <li>영어 사용빈도 (상/중/하)</li>
+          <li>난이도 (상/중/하)</li>
+        </ul>
+      </div>
+      <article class="message is-info">
+        <div class="message-header">
+          업무내용
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus rerum beatae, mollitia id voluptatum veniam dolore rem fugiat laudantium.
+        </div>
+        <div class="message-header">
+          근무 분위기 및 근무 환경
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, repudiandae.
+        </div>
+        <div class="message-header">
+          장/단점 
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo optio cumque totam debitis impedit rerum nobis vero enim magni ad ex ipsum doloremque animi eaque numquam dolorem doloribus ipsam perspiciatis blanditiis dolor dolore nesciunt, ducimus molestias maiores! Nobis, nam doloremque provident, modi reiciendis quia dolores odio ipsam alias quisquam eius?
+        </div>
+        <div class="message-header">
+          부당한 경험
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
+        </div>
+        <div class="message-header">
+          기타 하고싶은말
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
+        </div>
+      </article>
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <a class="button is-success toggle-modal">제출하기</a></a>
+    <a class="button toggle-modal">수정하기</a>
+  </footer>
+</div>
+</div>
+<!--column is-half left-->
+</div>
+<!-- form-warpper -->
+</div>
+<!-- container -->
+<!-- Right Review Guidelines -->
+<div class="container">
+  <div class="form-warpper">
+    <div class="column is-half right">
+      <div class="review-guidelines">
+        <h1 class="con has-text-warning tip"><i class="fa fa-warning">리뷰 작성 가이드</i></h1>
+      </br>
+      <p>이곳은 작성자가 직접 일을해본 경험의 리뷰를 작성하는 공간입니다.</p>
+      <p>따라서 직접 경험하지 않은 거짓된 리뷰로 제3자를 비하 및 모함하는 글, 다른이의 글을 불법으로 퍼오는 무단복제, 홍보성 글, 음란성 게시물, 상대방에게 모욕감을 주는 글, 불법 게시물등 네티켓에 어긋나는 글은 패널티 부과 및 무통보 삭제되며 최대 강제탈퇴까지 될 수 있습니다. 이점 유의하시어 글을 작성해 주시기 바랍니다.</p>
     </br>
-    <div class="field is-grouped">
-      <div class="control">
-        <button class="button is-success">Submit</button>
-      </div>
-      <div class="control">
-        <button class="button is-success">Cancel</button>
-      </div>
-      <div class="control">
-        <button class="toggle-modal button is-success">미리보기</button>
-      </div>
-    </div>
-    <!-- modal section -->
-    <div class="modal" id="modal">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Modal title</p>
-          <button class="delete toggle-modal"></button>
-        </header>
-        <section class="modal-card-body">
-          <!-- Content ... -->
-          <div class="block">
-            <span class="tag is-success">
-              상호명 (지역)
-            </span>
-          </div>
-          <div class="notification is-danger">
-            <ul>
-              <li>직종</li>
-              <li>포지션</li>
-              <li>일한 기간(얼마나 일했어?)</li>
-              <li>시급</li>
-              <li>영어 사용빈도 (상/중/하)</li>
-              <li>난이도 (상/중/하)</li>
-            </ul>
-          </div>
-          <article class="message is-info">
-            <div class="message-header">
-              업무내용
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore repellendus rerum beatae, mollitia id voluptatum veniam dolore rem fugiat laudantium.
-            </div>
-            <div class="message-header">
-              근무 분위기 및 근무 환경
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, repudiandae.
-            </div>
-            <div class="message-header">
-              장/단점 
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo optio cumque totam debitis impedit rerum nobis vero enim magni ad ex ipsum doloremque animi eaque numquam dolorem doloribus ipsam perspiciatis blanditiis dolor dolore nesciunt, ducimus molestias maiores! Nobis, nam doloremque provident, modi reiciendis quia dolores odio ipsam alias quisquam eius?
-            </div>
-            <div class="message-header">
-              부당한 경험
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
-            </div>
-            <div class="message-header">
-              기타 하고싶은말
-            </div>
-            <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, alias, consectetur. Quasi obcaecati facere quo, fugiat magnam dignissimos esse voluptates sed voluptatum delectus aspernatur! Amet quos obcaecati in debitis delectus.
-            </div>
-          </article>
-          <!-- Content ... -->
-        </section>
-        <footer class="modal-card-foot">
-          <a class="button is-success toggle-modal">제출하기</a></a>
-        <a class="button toggle-modal">수정하기</a>
-      </footer>
-    </div>
-  </div>
+    <p>호주에서 워홀러들이 하는 일과 관련된 유용한 리뷰를 작성해 주십시오. 이용자들이 해당 업체에 대한 경험을 간접적으로 이해하기 위해 회원님의 리뷰를 읽는다는 것을 잊지 마십시오. 따라서 개인적으로 모욕감을 주는 언어, 인신 공격 또는 정치, 윤리, 종교, 인종차별 또는 광범위한 사회적 문제에 관한 개인적 의견을 포함하지 마십시오.</p>
+  </br>
+  <p>부당한 일(호주 근로기준법에 위반되는 일)에 대한 리뷰를 작성할 시에는 거짓된 정보를 제공하지 않습니다. 작성자의 자가책임에 의거 거짓된 리뷰로인해 LikeHogu 및 제3자에게 발생한 피해에 대해서는 전적으로 작성자의 책임이며 LikeHogu는 어떠한 책임을 지지 않습니다.</p>
+</br>
+</div>
 </div>
 <!--column is-half right-->
 </div>
 <!-- form-warpper -->
 </div>
 <!-- container -->
+<!-- For 리뷰작성 미리보기 Modal -->
 <script>
   var modal = document.getElementById('modal');
     var elements = document.getElementsByClassName('toggle-modal');
