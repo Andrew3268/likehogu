@@ -60,10 +60,10 @@
 
 .main-title {
   width: 550px;
-  height: 400px;
+  height: 345px;
+  line-height: 9em;
   border: 1px solid #23d160;
   background-color: white;
-  
 }
 
 .uptext {
@@ -82,11 +82,6 @@
   text-align: center;
 }
 
-
-/**************** End Index Section *************/
-
-
-
 .post-warpper .left {
     float: left;
 }
@@ -104,11 +99,20 @@
     float: right;
 }
 
-.form-warpper .right .right-guide {
+.main-title-left {
+  text-align: left;
+}
+
+.main-title-right {
+  text-align: right;
+}
+
+.form-warpper .right .main-right-guide {
   text-align: left;
   border: 0.3em solid #ffdd57;
   border-radius: 0.7em;
   padding: 1em;
+  margin-top: 3.4em;
 }
 
 
@@ -225,6 +229,14 @@
 
 /************** Form Section **************/
 
+.form-warpper .right .right-guide {
+  text-align: left;
+  border: 0.3em solid #ffdd57;
+  border-radius: 0.7em;
+  padding: 1em;
+}
+
+
 .h4-checkbox {
   border: 1px solid #23d160;
   border-radius: 0.5em;
@@ -294,8 +306,67 @@
     visibility: visible;
 }
 
+.guide-ol {
+  margin-left: 1em;
+}
 
 
+
+/****************** Board Section ****************/
+
+.main-title-board {
+  width: 550px;
+  height: 275px;
+  line-height: 5em;
+  padding: 2em;
+  border: 1px solid #23d160;
+  background-color: white;
+  margin-top: -7em;
+}
+
+
+.form-warpper .right .main-right-guide-board {
+  text-align: left;
+  margin-top: 3.4em;
+  margin-top: -7em;
+}
+
+.uptext-city{
+  color: #23d160;
+  font-size: 8em;
+  font-weight: 800;
+}
+
+.downtext-city {
+  color: #23d160;
+  font-size: 6em;
+  font-weight: 800;
+}
+
+.uptext-factory{
+  color: #23d160;
+  font-size: 6em;
+  font-weight: 800;
+}
+
+.downtext-factory {
+  color: #23d160;
+  font-size: 6em;
+  font-weight: 800;
+}
+
+
+.uptext-farm{
+  color: #23d160;
+  font-size: 7em;
+  font-weight: 800;
+}
+
+.downtext-farm {
+  color: #23d160;
+  font-size: 6em;
+  font-weight: 800;
+}
 
 
 

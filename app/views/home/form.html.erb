@@ -4,10 +4,7 @@
     <header class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">
-            <%= image_tag "logo.png" %>
-            <!--<img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">-->
-          </a>
+          <a class="navbar-item"><%= image_tag "logo.png" %></a>
           <span class="navbar-burger burger" data-target="navbarMenuHeroC">
             <span></span>
             <span></span>
@@ -20,14 +17,6 @@
             <a class="navbar-item">로그인</a>
             <a class="navbar-item">로그아웃</a>
             <a class="navbar-item">회원가입</a>
-            <!-- <span class="navbar-item">
-              <a class="button is-success is-inverted">
-                <span class="icon">
-                  <i class="fa fa-github"></i>
-                </span>
-                <span>Download</span>
-              </a>
-            </span> -->
           </div>
         </div>
       </div>
@@ -38,13 +27,14 @@
     <div class="container has-text-left">
       <div class="form-warpper">
         <div class="column is-half left">
-          <div>
-            <p class="title is-4">1.리뷰를 작성하실 때는, <a href="#" class="signin"><span class="signin-text">로그인</span></a>이 필요합니다.</p>
-            <p class="title is-4">2.리뷰를 작성하실 때는, "JOB소리"에서 별도로 정한</br><span class="span-guideline">가이드라인</span>을 준수하셔야 합니다. 반드시 리뷰 작성 전에 읽어보세요.</p>
-          <p class="title is-4">3.한번 작성한 리뷰는 수정 및 삭제가 불가능 합니다. 리뷰를 수정하거나 삭제를 원하시면 "JOB소리"에 문의 해주세요.</p>
-          <p class="title is-4">4."JOB소리"에 작성된 리뷰를 무단전재•무단이용하는 것은 금지합니다. 단 해당 리뷰를 작성한 본인은 제외합니다.</p>
-          <p class="title is-4">5.리뷰를 작성하신 후에, 확인란에 표시하여 리뷰가 실제 경험에 관한 내용임을 확인하고 리뷰 전송 버튼을 누르세요!</p>
-        </div>
+          <ol>
+            <li class="title is-4">JOB소리는 자기책임에 의거한 리뷰에 의해 성립되는 커뮤니티 사이트입니다.</li>
+            <li class="title is-4">리뷰를 작성하실 때는, <a href="#" class="signin"><span class="signin-text">로그인</span></a>이 필요합니다.</li>
+            <li class="title is-4">리뷰를 작성하실 때는, "JOB소리"에서 별도로 정한</br><span class="span-guideline">가이드라인</span>을 준수하셔야 합니다. 반드시 리뷰 작성 전에 읽어보세요.</li>
+          <li class="title is-4">한번 작성한 리뷰는 수정 및 삭제가 불가능 합니다. 리뷰를 수정하거나 삭제를 원하시면 "JOB소리"에 문의 해주세요.</li>
+          <li class="title is-4">"JOB소리"에 작성된 리뷰를 무단전재•무단이용하는 것은 금지합니다. 단 해당 리뷰를 작성한 본인은 제외합니다.</li>
+          <li class="title is-4">리뷰를 작성하신 후에, 체크박스(<input type="checkbox">)에 표시하여 리뷰가 실제 경험에 관한 내용임을 확인하고 리뷰 전송 버튼을 누르세요!</li>
+        </ol>
       </div>
     </div>
     <div class="form-warpper">
@@ -55,20 +45,24 @@
         <div class="right-guide">
           <h3 class="title is-4">1.리뷰에 포함 가능한 내용</h3>
           <div class="right-guide-1">
-            <p>-직접 경험을 토대로한 진실된 내용</p>
+            <p>-직접 경험을 바탕으로한 진실된 내용</p>
             <p>-경험자로써의 노하우 및 주의점</p>
+            <p>-부당한 경험에대한 공유 및 조언</p>
           </div>
           <h3 class="title is-4">2.리뷰에 포함 불 가능한 내용</h3>
           <div class="right-guide-1">
             <p>-욕설 및 비속어</p>
             <p>-타인을 비하하는 내용</p>
-            <p>-본인이 직접 경험하지 않은 내용</p>
+            <p>-본인이 직접 경험하지 않은(거짓된) 내용</p>
+            <p>-사이트의 목적과 관련없는 내용</p>
           </div>
-          <h3>*리뷰의 내용에 관한 상세 정보는 리뷰 <span class="span-guideline">가이드라인</span>을 참고하세요.</h3>
-        </div>
+          <h3>사람들은 신중하게 작성한 리뷰를 더 많이 읽습니다. 쉽게 읽을 수 있는 글을 씁니다. 올바른 문법을 사용하고, 맞춤법을 검사하고, 욕설을 사용하지 않습니다. 독창성을 발휘하고 작성 과정을 즐기세요 :D </h3>
+        </br>
+        <h3>*리뷰의 내용에 관한 상세 정보는 리뷰 <span class="span-guideline">가이드라인</span>을 참고하세요.</h3>
       </div>
     </div>
   </div>
+</div>
 </div>
 <!-- Hero footer: will stick at the bottom -->
 <div class="hero-foot">
@@ -144,10 +138,10 @@
     <div class="field">
       <label class="label"><span class="important">*</span>세부직종
         <div class="icon has-text-info review-tip-icon"><i class="fa fa-info-circle"></i>
-          <span class="review-tip-text">식당의 경우 :한식,일식,중식,등을 입력
-          </br>상점,호텔,청소,세차,배달,massage 등을 입력  
-        </br>공장의 경유: 고기,사료,샐러드 등을 입력
-      </br>농장의 경우 :딸기, 토마토, 라즈베리 등을 입력
+          <span class="review-tip-text">식당( 한식,일식,중식,등),
+          </br>상점,호텔,청소,세차,배달,massage등 
+        </br>공장(고기,사료,샐러드 등)
+      </br>농장(딸기, 토마토, 라즈베리 등)
     </span>
   </div>
 </label>
@@ -266,12 +260,16 @@
 <div class="field">
   <label class="label"><span class="important">*</span>부당한 경험
     <div class="icon has-text-info review-tip-icon"><i class="fa fa-info-circle"></i>
-      <span class="review-tip-text">부당한 경험(호주 근로법에 위반되는 경우 또는 그외 부당하다고 생각되는 경험)이있을 경우에만 입력해주세요.</span>
-    </div>
-  </label>
-  <div class="control">
-    <textarea class="textarea" placeholder="50자 이상 작성해주세요 :P"></textarea>
-  </div>
+      <span class="review-tip-text">부당한 경험(호주 근로법에 위반되는 경우 또는 그외 부당하다고 생각되는 경험)이있을 경우에만 입력해주세요.</br>
+      *최저시급</br>
+    *트레이닝 명목으로 무급 또는 하프페이</br>
+  *디파짓</br>
+*비인간적인 대우</span>
+</div>
+</label>
+<div class="control">
+  <textarea class="textarea" placeholder="50자 이상 작성해주세요 :P"></textarea>
+</div>
 </div>
 <div class="field">
   <label class="label">하고 싶은말</label>
@@ -291,9 +289,11 @@
 </br>
 <label class="checkbox">
   <input type="checkbox">
-  이 리뷰는 저의 경험을 바탕으로 작성한 이 근무지에 대한 진실된 의견입니다. 저는 이 시설과 개인적 혹은 업무적으로 관련이 없으며, 이 리뷰를 작성하는 조건으로 해당 시설 또는 제3자로부터 어떠한 금전적 또는 물질적인 대가를 제공받지 않았습니다. 저는 LikeHogu가 조작된 리뷰에 대하여 단호하게 대처하는 방침을 견지하고 있음을 알고 있습니다.
-  <h4 class="h4-checkbox">LikeHogu는 리뷰 작성자가 리뷰의 대상 업체와 관련이 없다는 사실을 명확히 하고자 합니다. 이 박스를 체크하여, 해당 업체 또는 경쟁업체의 관계자가 아니며 해당 업체와 개인적/사업적으로 관련이 없음을 확인해 주시기 바랍니다. 본 이용 약관의 위반과 비윤리적 관행 이외에 리뷰에 대한 부정행위를 저지르는 것은 대부분의 관할 지역에서 법률 및 규정으로 금지됩니다.[[(UCP 2005/29/EC) 및 (FTC 16CFR Part 255) 참조]]. 자세한 내용은 컨텐츠 무결성 정책을 참조하십시오.
-  </h4>
+  이 리뷰는 저의 경험을 바탕으로 작성한 이 장소(Work Place)에 대한 진실된 의견입니다. 저는 이 시설과 개인적 혹은 (업무적으로) 관련이 없으며, 이 리뷰를 작성하는 조건으로 해당 시설 또는 제3자로부터 어떠한 금전적 또는 물질적인 대가를 제공받지 않았습니다. 저는 JOB소리가 조작된 리뷰에 대하여 단호하게 대처하는 방침을 견지하고 있음을 알고 있습니다.
+  <article class="message is-success">
+    <h4 class="message-body h4-checkbox">Job소리는 리뷰 작성자가 리뷰의 대상 업체와 관련이 없다는 사실을 명확히 하고자 합니다. 이 박스를 체크하여, 해당 업체 또는 경쟁업체의 관계자가 아니며 해당 업체와 개인적/사업적으로 관련이 없음을 확인해 주시기 바랍니다.
+    </h4>
+  </article>
 </label></br></br>
 <div class="field is-grouped">
   <div class="control">
@@ -318,7 +318,7 @@
       <!-- Content ... -->
       <div class="card">
         <div class="card-content">
-          <p class="title workplace">일했던 곳 이름</p>
+          <p class="title workplace">장소(Work Place)</p>
         </div>
         <footer class="card-footer">
           <p class="card-footer-item">
@@ -374,7 +374,7 @@
           장점 & 단점 
         </div>
         <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligsula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
         </div>
       </article>
       <article class="message is-warning">
@@ -390,6 +390,7 @@
     <footer class="modal-card-foot">
       <a class="button is-success toggle-modal">제출하기</a></a>
     <a class="button toggle-modal">수정하기</a>
+    <p>한번 제출한 리뷰는 수정 및 삭제가 불가능 합니다. 리뷰를 수정하거나 삭제를 원하시면 "JOB소리"에 문의 해주세요.</p>
   </footer>
 </div>
 </div>
@@ -406,43 +407,51 @@
         <h1 class="con has-text-warning tip"><i class="fa fa-warning">리뷰 작성 가이드</i></h1>
       </br>
       <p>이곳은 여러분이 직접 경험해본 "경험의한 리뷰"를 작성하는 공간입니다.</p>
-      <p>따라서 직접 경험하지 않은 거짓된 리뷰로 제3자를 비하 및 모함하는 글, 다른이의 글을 불법으로 퍼오는 무단복제, 홍보성 글, 음란성 게시물, 상대방에게 모욕감을 주는 글, 불법 게시물등 네티켓에 어긋나는 글은 패널티 부과 및 무통보 삭제되며 최대 강제탈퇴까지 될 수 있습니다. 이점 유의하시어 글을 작성해 주시기 바랍니다.</p>
+      <p>따라서 직접 경험하지 않은 거짓된 리뷰로 제3자를 비하 및 모함하는 글 또는 다른이의 글을 불법으로 퍼오는 무단복제, 홍보성 글, 음란성 게시물, 상대방에게 모욕감을 주는 글, 불법 게시물등 네티켓에 어긋나는 글은 패널티 부과 및 무통보 삭제되며 최대 강제탈퇴까지 될 수 있습니다. 이점 유의하시어 글을 작성해 주시기 바랍니다.</p>
     </br>
-    <p>사실적인 정보여야 합니다. 자신의 경험을 바탕으로 장소(Work Place)에 대해 구체적으로 설명합니다. 최대한 정확하게 전달하기 위해 노력하고 장소(Work Place)에 대한 긍정적인 측면과 부정적인 측면을 모두 포함합니다. 이용자들이 해당 장소(Work Place)에 대한 경험을 간접적으로 이해하기 위해 여러분의 리뷰를 읽는다는 것을 잊지 마세요. 따라서 개인적으로 모욕감을 주는 언어, 인신 공격 또는 정치, 윤리, 종교, 인종차별 또는 광범위한 사회적 문제에 관한 개인적 의견을 포함하지 마세요!.</p>
+    <p class="title is-3">진정성이 있는 리뷰</p>
+    <p>사실적인 정보여야 합니다. 리뷰는 장소(Work Place)에 대한 자신의 경험을 바탕으로 해야 하므로 장소(Work Place)의 리뷰을 조작하려는 의도로 리뷰를 게시해서는 안 됩니다. 자신의 경험을 바탕으로 장소(Work Place)에 대해 구체적으로 설명합니다. 최대한 정확하게 전달하기 위해 노력하고 장소(Work Place)에 대한 긍정적인 측면과 부정적인 측면을 모두 포함합니다. 어떤 장소에 대한 경험이 항상 마음에 들 수는 없습니다. 때때로 부정적인 의견을 공유하려는 경우도 있습니다. 실망했다 하더라도 건설적인 비판을 해야 합니다. 이용자들이 해당 장소(Work Place)에 대한 경험을 간접적으로 이해하기 위해 여러분의 리뷰를 읽는다는 것을 잊지 마세요. </p>
   </br>
-  <p>부당한 경험(호주 근로기준법에 위반되는 일)에 대한 리뷰를 작성할 시에는 거짓된 정보를 제공하지 않습니다. 최대한 사실적인 정보이며 구체적으로 작성해 주세요.  작성자의 자가책임에 의거 거짓된 리뷰로인해 JOB소리 및 제3자에게 발생한 피해에 대해서는 전적으로 작성자의 책임이며 JOB소리는 어떠한 책임을 지지 않습니다.</p>
+  <p>리뷰가 거짓이거나 가이드라인을 충족하지 않는다고 의심되면 각 리뷰 아래에 있는 <a href="#">부적절한 리뷰 신고</a> 기능을 사용하실 수 있습니다.</p>
 </br>
-<p>광고: 다른 웹사이트나 전화번호 링크를 추가하는 등 광고 목적으로 리뷰를 작성해서는 안 됩니다. 리뷰는 장소(Work Place)에 대한 자신의 경험을 바탕으로 해야 하므로 장소(Work Place)의 리뷰을 조작하려는 의도로 리뷰를 게시해서는 안 됩니다.</p>
+<p class="title is-3">공정성이 있는 리뷰</p>
+<p>리뷰는 정직하고 공정한 경우에 가장 가치가 있습니다. 장소(Work Place)의 비지니스 소유자는 직원 또는 제3자에게 업체나 고용주에 대한 리뷰작성을 요청해서는 안 됩니다. 특정 업체의 리뷰 작성 및 특정 경쟁업체를 상대로 한 부정적 리뷰 작성을 조건으로 하여 현금, 상품, 서비스 제공을 제안하거나 수락해서는 안 됩니다. 비즈니스 소유자가 리뷰를 요청하기 위한 목적만으로 사람을 고용해서는 안됩니다.</p>
 </br>
-<p>스팸: 스팸을 보내서는 안 됩니다. 장소(Work Place)에 대한 내 경험만 작성해야 합니다. 홍보성/상업성 콘텐츠를 포함해서는 안 되고, 동일한 콘텐츠를 여러 번 게시해서는 안 되며, 여러 계정에서 같은 장소에 대한 리뷰를 작성해서는 안 됩니다.</p>
-</br>
-<p>관계없는 리뷰: 다른 사람의 경험을 바탕으로 한 리뷰나 현재 리뷰 중인 장소(Work Place)와 관계없는 리뷰를 게시해서는 안 됩니다. 리뷰는 정치나 사회 비판 또는 사적인 불평을 표현하기 위한 포럼이 아닙니다. 부적절한 리뷰에 대해서는  '부적절한 리뷰 신고' 링크를 사용하여 신고하면 됩니다.
+<p class="title is-3">관련 없는 리뷰</p>
+<p>다른 사람의 경험을 바탕으로 한 리뷰나 현재 리뷰 중인 장소(Work Place)와 관계없는 리뷰를 게시해서는 안 됩니다. 리뷰는 정치나 사회 비판 또는 사적인 불평을 표현하기 위한 포럼이 아닙니다. 따라서 개인적으로 모욕감을 주는 언어, 인신 공격 또는 정치, 윤리, 종교, 인종차별, 장애, 성별, 연령, 군필 여부, 성적 취향 또는 성적 정체성을 근거로 특정 집단에 대한 증오심을 조장하는 리뷰를 허용하지 않습니다. 또는 광범위한 사회적 문제에 관한 개인적 의견을 포함하지 마세요! 부적절한 리뷰에 대해서는 각 리뷰 아래에 있는 <a href="#">부적절한 리뷰 신고</a> 기능을 사용하여 신고하면 됩니다.
 </p>
 </br>
-<p>예의를 지킬 것: 어떤 장소에 대한 경험이 항상 마음에 들 수는 없습니다. 때때로 부정적인 의견을 공유하려는 경우도 있습니다. 실망했다 하더라도 건설적인 비판을 해야 합니다.</p>
+<p class="title is-3">근로기준법에 관한 리뷰</p>
+<p>부당한 경험(호주 근로기준법에 위반되는 일, 특히 최저시급 문제)에 대한 리뷰를 작성할 시에는 거짓된 정보를 제공하지 않습니다. 최대한 사실적인 정보이며 구체적으로 작성해 주세요.  작성자의 자가책임에 의거 거짓된 리뷰로인해 JOB소리 및 제3자에게 발생한 피해에 대해서는 전적으로 작성자의 책임이며 JOB소리는 어떠한 책임을 지지 않습니다.</p>
 </br>
-<p>일반적인 논평이 아닌 리뷰가 되도록 할 것: 때로는 어떤 장소가 최신 뉴스나 이벤트에서 다뤄지면서 대규모 공개 논쟁이나 화제의 대상이 되는 경우도 있습니다. "JOB소리"는 리뷰어의 의견을 존중하고 소중하게 받아들이지만 로컬 리뷰는 사회적이거나 정치적인 논평을 위한 것이 아닙니다. 블로그나 소셜 네트워크처럼 이러한 종류의 대화에 적합한 다른 공간이 있을 것입니다. 최근 뉴스와 관련하여 장소에 대한 일반적인 논평을 작성하기보다 리뷰어의 직접적인 경험을 작성해 주시기 바랍니다.</p>
+<p class="title is-3">광고, 스펨 및 불법 컨텐츠</p>
+<ol class="guide-ol">
+  <li>다른 웹사이트나 전화번호 링크를 추가하는 등 광고 목적으로 리뷰를 작성해서는 안 됩니다.</li>
+  <li>스팸을 보내서는 안 됩니다. 홍보성/상업성 콘텐츠를 포함해서는 안 되고, 동일한 리뷰를 여러 번 게시해서는 안 됩니다.</li>
+  <li>불법 콘텐츠나 불법 콘텐츠 링크가 포함된 리뷰를 게시해서는 안 됩니다.</li>
+  <li>"JOB소리"는 본 사이트에 링크된 제3자가 운영하는 사이트에 관하여 어떠한 보증도 하지 않습니다. 이용자의 판단하에 이용해 주십시오. 또 링크처에서 생긴 손해에 대하여 JOB소리는 일절 보상을 하지 않습니다.</li>
+</ol>
 </br>
-<p>세련되게 쓸 것: 사람들은 신중하게 작성한 리뷰를 더 많이 읽습니다. 쉽게 읽을 수 있는 글을 씁니다. 올바른 문법을 사용하고, 맞춤법을 검사하고, 욕설을 사용하지 않습니다. 적절한 길이를 선택합니다(한 단락이 바람직함). 독창성을 발휘하고 작성 과정을 즐기세요.</p>
+<p>리뷰가 광고, 스펨 및 불법 컨텐츠를 포함 된다고 의심되면 각 리뷰 아래에 있는 <a href="#">부적절한 리뷰 신고</a> 기능을 사용하실 수 있습니다.</p>
 </br>
-<p>내용의 건전성: 음란하거나 모욕적이거나 불쾌감을 주는 언어를 사용해서는 안 됩니다. 다른 사람에 대해 인신공격을 하는 리뷰도 삭제됩니다.</p>
+<p class="title is-3">내용의 건전성</p>
+<p>성적인 자료를 포함하는 리뷰를 허용하지 않습니다. 또한 아동을 성적으로 이용하거나 묘사하는 리뷰는 절대 허용하지 않습니다. 음란하거나 모욕적이거나 불쾌감을 주는 언어를 사용해서는 안 됩니다. 다른 사람에 대해 인신공격을 하는 리뷰는 통보없이 삭제됩니다.</p>
 </br>
-<p>이해관계의 충돌: 리뷰는 정직하고 공정한 경우에 가장 가치가 있습니다. 장소의 소유자나 직원이 본인의 업체나 고용주에 대해 리뷰를 작성해서는 안 됩니다. 특정 업체의 리뷰 작성 및 특정 경쟁업체를 상대로 한 부정적 리뷰 작성을 조건으로 하여 현금, 상품, 서비스 제공을 제안하거나 수락해서는 안 됩니다. 비즈니스 소유자가 리뷰를 요청하기 위한 목적만으로 사업장에 리뷰 장소나 키오스크를 개설해서는 안 됩니다.</p>
+<p class="title is-3">개인 및 기밀 정보 </p>
+<p>신용카드 정보, 주민등록번호, 운전면허증 정보 등 다른 사람의 개인 및 기밀 정보가 포함된 리뷰를 게시해서는 안 됩니다.</p>
 </br>
-<p>불법 콘텐츠: 불법 콘텐츠나 불법 콘텐츠 링크(예: 처방전이 필요한 약을 처방전 없이 구매하는 행위를 조장하는 링크)가 포함된 리뷰를 게시해서는 안 됩니다.</p>
+<p class="title is-3">리뷰 삭제</p>
+<p>JOB소리는 이용자의 자기책임에 의거한 리뷰에의해 성립되는 커뮤니티이지만 쾌적한 환경을위해 다음에 해당•유사한 리뷰가 발견되었을 경우, 예고없이 해당 리뷰를 삭제하는 경우가 있습니다.</p>
 </br>
-<p>성적인 자료: 성적인 자료를 포함하는 리뷰를 허용하지 않습니다. 또한 아동을 성적으로 이용하거나 묘사하는 리뷰는 절대 허용하지 않습니다. Google은 이러한 내용이 담긴 리뷰를 삭제하고 계정을 폐쇄하며 미국 국립실종학대아동센터(National Center for Missing and Exploited Children: NCMEC) 및 사법당국에 신고합니다.
-</p>
+<ol class="guide-ol">
+  <li>가이드라이에 어긋나는 리뷰</li>
+  <li>취지에 부합되되지 않은 것</li>
+  <li>영리를 목적으로 하는 것이나 개인적인 매매•양도를 제의하는 내용, 선전 행위에 관한 글</li>
+  <li>기타, 관리운영을 방해하는 등 JOB소리가 부적절하다고 판단한 것</li>
+</ol>
 </br>
-<p>명의 도용: 다른 사람을 대신해서 리뷰를 게시하거나 신원을 위장하거나 리뷰 중인 장소와의 관계를 허위 진술해서는 안 됩니다.</p>
+<p>"JOB소리"는 리뷰 내용에 게재된 장소(Work Place) 관하여 어떠한 보증도 하지 않습니다. 이용자의 판단하에 이용해 주십시오. 또한 게재된 리뷰에 의해 생긴 이용자의 손해(이용자가 작성한 각종 컨텐츠에 의한 컴퓨터 바이러스 감염피해 등도 포함합니다)나 이용자끼리의 트러블 등에 대하여 JOB소리는 일절 보상 및 관여를 하지 않습니다.</p>
 </br>
-<p>개인 및 기밀 정보: 신용카드 정보, 주민등록번호, 운전면허증 정보 등 다른 사람의 개인 및 기밀 정보가 포함된 리뷰를 게시해서는 안 됩니다.</p>
-</br>
-<p>증오심 표현: Google은 인종 또는 민족, 종교, 장애, 성별, 연령, 군필 여부, 성적 취향 또는 성적 정체성을 근거로 특정 집단에 대한 증오심을 조장하는 리뷰를 허용하지 않습니다.</p>
-</br>
-<p>"JOB소리"는 게재된 리뷰의 내용에 관하여 어떠한 보증도 하지 않습니다. 이용자의 판단하에 이용해 주십시오. 또한 게재된 리뷰에 의해 생긴 이용자의 손해(이용자가 작성한 각종 컨텐츠에 의한 컴퓨터 바이러스 감염피해 등도 포함합니다)나 이용자끼리의 트러블 등에 대하여 JOB소리는 일절 보상 및 관여를 하지 않습니다.</p>
-</br>
-<p>"JOB소리"는 본 사이트에 링크된 제3자가 운영하는 사이트에 관하여 어떠한 보증도 하지 않습니다. 이용자의 판단하에 이용해 주십시오. 또 링크처에서 생긴 손해나 이용자끼리의 트러블 등에 대하여 JOB소리는 일절 보상 및 관여를 하지 않습니다.</p>
 </div>
 </div>
 <!--column is-half right-->
