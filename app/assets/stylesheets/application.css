@@ -343,6 +343,26 @@
   font-weight: 800;
 }
 
+.before-review {
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-top: -1em;
+}
+
+.board-left-text {
+  margin-top: -0.9em;
+}
+
+.jobsory {
+  color: #23d160;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  background-color: white;
+  padding: 0 0.5em;
+}
+
 .uptext-factory{
   color: #23d160;
   font-size: 6em;
@@ -369,6 +389,36 @@
 }
 
 
+
+/************** Post In Post Section *********/
+
+.report-tip-icon {
+  position: relative;
+  display: inline;
+}
+
+.report-tip-icon .report-tip-text {
+    visibility: hidden;
+    width: 58em;
+    background-color: #23d160;
+    margin-left: 30.5em;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 8px;
+
+    /* Position the report-tip-icon */
+    position: absolute;
+    z-index: 1;
+}
+
+.report-tip-icon .report-tip-text li {
+  margin-left: 1em;
+}
+
+.report-tip-icon:hover .report-tip-text {
+    visibility: visible;
+}
 
 
 

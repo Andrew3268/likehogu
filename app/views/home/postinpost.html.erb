@@ -67,18 +67,56 @@
       </div>
       <article class="message">
         <div class="message-body">
-          <ul>
-            <li>직종(part/full/casual)</li>
-            <li>세부직종</li>
-            <li>근무형태</li>
-            <li>포지션</li>
-            <li>근무기간</li>
-            <li>급여방식</li>
-            <li>시급</li>
-            <li>평균근무시간</li>
-            <li>영어 사용빈도 (상/중/하)</li>
-            <li>난이도 (상/중/하)</li>
-          </ul>
+          <div class="content">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Job Type</td>
+                  <td>City Job</td>
+                </tr>
+                <tr>
+                  <td>세부직종</td>
+                  <td>한식당</td>
+                </tr>
+                <tr>
+                  <td>Work Type</td>
+                  <td>Part Time</td>
+                </tr>
+                <tr>
+                  <td>Position</td>
+                  <td>kitchen Hand</td>
+                </tr>
+                <tr>
+                  <td>근무기간</td>
+                  <td>2 month</td>
+                </tr>
+                <tr>
+                  <td>급여방식</td>
+                  <td>Cash</td>
+                </tr>
+                <tr>
+                  <td>Pay(Per Hour)</td>
+                  <td>$16</td>
+                </tr>
+                <tr>
+                  <td>평균 근무시간(Per Week)</td>
+                  <td>30 hours</td>
+                </tr>
+                <tr>
+                  <td>영어사용빈도</td>
+                  <td>하</td>
+                </tr>
+                <tr>
+                  <td>근무난이도</td>
+                  <td>하</td>
+                </tr>
+                <tr>
+                  <td>추천 & 비추천</td>
+                  <td>비추천</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </article>
       <article class="message">
@@ -121,89 +159,99 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
         </div>
       </article>
-    </div>
-    <!--column is-half left-->
-    <div class="column is-half right">
-      <article class="media">
-        <figure class="media-left">
-          <p class="image is-64x64">
-            <img src="https://bulma.io/images/placeholders/128x128.png">
-          </p>
-        </figure>
-        <div class="media-content">
-          <div class="field">
-            <p class="control">
-              <textarea class="textarea" placeholder="Add a comment..."></textarea>
-            </p>
-          </div>
-          <div class="field">
-            <p class="control">
-              <button class="button">Post comment</button>
-            </p>
-          </div>
-        </div>
-      </article>
-      <article class="media">
-        <figure class="media-left">
-          <p class="image is-64x64">
-            <img src="https://bulma.io/images/placeholders/128x128.png">
-          </p>
-        </figure>
-        <div class="media-content">
-          <div class="content">
-            <p>
-              <strong>Barbara Middleton</strong>
-              <br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
-              <br>
-              <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
-            </p>
-          </div>
-          <article class="media">
-            <figure class="media-left">
-              <p class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png">
-              </p>
-            </figure>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Sean Brown</strong>
-                  <br>
-                  Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
-                  <br>
-                  <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
-                </p>
-              </div>
-              <article class="media">
-                Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
-              </article>
-              <article class="media">
-                Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
-              </article>
-            </div>
-          </article>
-          <article class="media">
-            <figure class="media-left">
-              <p class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png">
-              </p>
-            </figure>
-            <div class="media-content">
-              <div class="content">
-                <p>
-                  <strong>Kayli Eunice </strong>
-                  <br>
-                  Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
-                  <br>
-                  <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-    <!--column is-half right -->
+      <a class="button is-success is-focused">맘에 들어요&nbsp;&nbsp;<i class="fa fa-heart" aria-hidden="true"></i></a>
+      <a class="button is-danger is-focused">신고하기&nbsp;&nbsp;
+        <div class="icon has-text-warning report-tip-icon"><i class="fa fa-warning"></i>
+          <ol class="report-tip-text">
+            <li>JOB소리 가이드라인을 위반하는 리뷰만 신고하세요.</li>
+            <li>개인적으로 동의하지 않거나 마음에 들지 않는다는 이유만으로 리뷰를 신고하지는 마세요.</li>
+            <li>작성자와 해당 장소(Work Place)의 사실에 대한 의견이 서로 다르더라도, 사실여부에 대해 누가 맞는지 확인할 수 있는 확실한 방법이 없으므로 </br>JOB소리는 이 같은 상황에 관여하지 않습니다. 리뷰를 신고하기 전에 <span class="span-guideline">가이드라인</span>을 읽어보세요.</li>
+        </ol>
+      </div>
+    </a>
   </div>
+  <!--column is-half left-->
+  <div class="column is-half right">
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/128x128.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="field">
+          <p class="control">
+            <textarea class="textarea" placeholder="Add a comment..."></textarea>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control">
+            <button class="button">Post comment</button>
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="https://bulma.io/images/placeholders/128x128.png">
+        </p>
+      </figure>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>Barbara Middleton</strong>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+            <br>
+            <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+          </p>
+        </div>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-48x48">
+              <img src="https://bulma.io/images/placeholders/96x96.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Sean Brown</strong>
+                <br>
+                Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a lobortis leo feugiat.
+                <br>
+                <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+              </p>
+            </div>
+            <article class="media">
+              Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem cursus ullamcorper sit amet nec massa.
+            </article>
+            <article class="media">
+              Morbi vitae diam et purus tincidunt porttitor vel vitae augue. Praesent malesuada metus sed pharetra euismod. Cras tellus odio, tincidunt iaculis diam non, porta aliquet tortor.
+            </article>
+          </div>
+        </article>
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-48x48">
+              <img src="https://bulma.io/images/placeholders/96x96.png">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Kayli Eunice </strong>
+                <br>
+                Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id feugiat.
+                <br>
+                <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </article>
+  </div>
+  <!--column is-half right -->
+</div>
 </div>
